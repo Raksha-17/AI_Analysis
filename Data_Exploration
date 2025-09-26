@@ -1,0 +1,42 @@
+-------Data Exploration------------
+
+------Improve data quality checks (suggested additions)
+/* Count nulls per key column */
+
+SELECT
+  SUM(CASE WHEN Industry IS NULL THEN 1 ELSE 0 END) AS missing_industry,
+  SUM(CASE WHEN AI_Adoption_Level IS NULL THEN 1 ELSE 0 END) AS missing_adoption_level,
+  SUM(CASE WHEN Salary_USD IS NULL THEN 1 ELSE 0 END) AS missing_salary,
+  SUM(CASE WHEN Country IS NULL THEN 1 ELSE 0 END) AS missing_country
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`;
+
+/* Check distinct counts to validate the number of unique hosts/listings */
+
+SELECT COUNT(DISTINCT Country) AS distinct_countries,
+       COUNT(DISTINCT Industry) AS distinct_industries
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`;
+
+-------Make queries explicit and robust
+/* Jobs by industry and AI adoption level (explicit columns)*/
+
+SELECT
+  Industry AS industry,
+  AI_Adoption_Level AS ai_adoption_level,
+  COUNT(*) AS total_jobs
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+GROUP BY Industry, AI_Adoption_Level
+ORDER BY Industry, AI_Adoption_Level;
+
+/* Average salary by role and adoption level (safe median)*/
+
+SELECT  
+  Job_Title AS role,  
+  AI_Adoption_Level AS ai_adoption_level,
+  AVG(Salary_USD) AS avg_salary_usd,
+  APPROX_QUANTILES(Salary_USD, 100)[OFFSET(50)] AS approx_median_salary
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+WHERE Salary_USD IS NOT NULL
+  AND Job_Title IS NOT NULL
+  AND AI_Adoption_Level IS NOT NULL
+GROUP BY Job_Title, AI_Adoption_Level
+ORDER BY role, ai_adoption_level;
