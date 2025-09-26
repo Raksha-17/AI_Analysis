@@ -10,13 +10,14 @@ Derive actionable insights from two datasets — Global AI Impact and AI Job Mar
 * Key insights: identify top 5 industries by impact and top 5 regions by adoption-growth alignment.
 * Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI sheet.
 
-I will follow the steps of the data analysis process: Ask, Prepare, Process, [Analyze](), Share and Act.
+I will follow the steps of the data analysis process: Ask, [Prepare](), Process, [Analyze](), Share and Act.
 
 ### Quick links:
 Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
 
-### SQL Queries:  
+### SQL Queries:
 
+[Data Exploration]() 
 [Data Analysis]()  
   
 Data Visualizations: [Tableau]()  
@@ -58,7 +59,9 @@ If sharing externally, mask or aggregate sensitive fields; ensure row-level iden
 ### Data Exploration
 SQL Query: [1.Data Exploration]() 
 
-1. Normalize country/region names; fix typos
+Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
+
+1. Normalize country/region names; fix typos. 
 2. Count nulls per key column:
 3. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
 4. Growth indicators per country/region if multiple years exist.
