@@ -58,14 +58,24 @@ If sharing externally, mask or aggregate sensitive fields; ensure row-level iden
 ### Data Exploration
 SQL Query: [1.Data Exploration]() 
 
-1. Normalize country/region names; fix typos.
-2. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
-3. Growth indicators per country/region if multiple years exist.
-4. Adoption bins (Low/Medium/High) based on AI_Adoption_Rate_PERCENT.
-5. Quick aggregations to establish baselines (mean salary by industry/adoption, total impact by country).
+1. Normalize country/region names; fix typos
+2. Count nulls per key column:
+3. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
+4. Growth indicators per country/region if multiple years exist.
+5. Adoption bins (Low/Medium/High) based on AI_Adoption_Rate_PERCENT.
+6. Quick aggregations to establish baselines (mean salary by industry/adoption, total impact by country).
 
 ## Analyze
 SQL Query: [Data Analysis]()  
+
+The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
+
+The analysis question is:
+
+1. Regions with strongest adoption signals and growth potential.
+2. Industries with highest cumulative AI impact and corresponding workforce implications.
+3. Salary dynamics by industry and adoption level to inform talent strategy and benchmarking.
+4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design.
 
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
 
