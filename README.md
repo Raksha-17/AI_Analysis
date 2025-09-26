@@ -3,7 +3,7 @@ Derive actionable insights from two datasets — Global AI Impact and AI Job Mar
 
 ## Introduction
 * Goal: Derive actionable insights on global AI impact and job market dynamics to inform strategy (e.g., policy, talent planning, or product focus).
-* Scope: Two datasets:
+* Scope: Two datasets.
 * Global AI impact: country, industry, job_loss_due_to_AI_percent, year, etc.
 * AI job market insights: industry, AI_adoption_level, salary_usd, job_title, location, etc.
 * Data quality: <2% missingness on key fields per dataset.
@@ -15,7 +15,7 @@ I will follow the steps of the data analysis process: Ask, Prepare, Process, [An
 ### Quick links:
 Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
 
-SQL Queries:  
+### SQL Queries:  
 
 [Data Analysis]()  
   
