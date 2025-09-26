@@ -10,7 +10,7 @@ Derive actionable insights from two datasets — Global AI Impact and AI Job Mar
 * Key insights: identify top 5 industries by impact and top 5 regions by adoption-growth alignment.
 * Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI sheet.
 
-I will follow the steps of the data analysis process: Ask, Prepare, [Process](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration), [Analyze](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis), Share and Act.
+I will follow the steps of the data analysis process: [Ask](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#analyze), [Share](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#share) and [Act](https://github.com/Raksha-17/AI_Analysis/blob/main/README.md#act).
 
 ### Quick links:
 Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
