@@ -99,40 +99,45 @@ The analysis question is:
 4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design. 
 
 * ai_job_market_insights: Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
-  <img width="1874" height="232" alt="11" src="https://github.com/user-attachments/assets/853e54e8-04b6-42bc-843a-0c55eb989595" />
+  
+<img width="1874" height="232" alt="11" src="https://github.com/user-attachments/assets/93edaff0-e44e-44fe-8475-481caa592b39" />
 
 * Average salary by role and adoption level (safe median) - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
-<img width="1874" height="232" alt="10" src="https://github.com/user-attachments/assets/fff63d5d-fcd6-4fdd-8495-53cf7c1f730a" />
+  <img width="1874" height="232" alt="12" src="https://github.com/user-attachments/assets/96e6c50a-3a1f-4035-aae2-b5744e50f3a5" />
+
 
 *  ai_job_market_insights: Regions with strongest growth projection, Assuming: Region and Job_Growth_Projection (as a percentage or index) - Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
-  <img width="1874" height="232" alt="12" src="https://github.com/user-attachments/assets/8de54557-4d38-4e47-beaf-b0a3e70bd31c" />
 
 
 *  global_ai_impact: Impact by country and Industry- Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing.
-<img width="1874" height="264" alt="13" src="https://github.com/user-attachments/assets/0e870220-2f2f-4dc2-8cd3-e13ca072f188" />
+<img width="1874" height="264" alt="13" src="https://github.com/user-attachments/assets/a2b39329-204b-444e-845d-152d46470552" />
 
   
 
 *  global_ai_impact: Adoption vs. impact - AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
-<img width="1874" height="232" alt="14" src="https://github.com/user-attachments/assets/ee581a42-935d-4c70-ba71-564e8b9fb18a" />
+<img width="1874" height="232" alt="14" src="https://github.com/user-attachments/assets/b8ed150f-dee6-4e13-ad00-9ce333a9ef7e" />
 
 *  Yearly total impact by country and domain (global_ai_impact) - In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
-<img width="1874" height="232" alt="15" src="https://github.com/user-attachments/assets/e42f43d7-b247-490a-869c-cc935bff18ab" />
+<img width="1874" height="232" alt="15" src="https://github.com/user-attachments/assets/345e4f31-fd9f-4416-ac9e-b24c41a06d1a" />
 
 
 *  Yearly adoption/readiness vs. impact (global_ai_impact) - China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
-<img width="1874" height="232" alt="16" src="https://github.com/user-attachments/assets/2b1f939b-0bd0-4e66-b016-31ead61119bd" />
+<img width="1874" height="232" alt="16" src="https://github.com/user-attachments/assets/29704c24-359e-481e-b3db-0f68f142ce8c" />
 
 
 *    Yearly top domains by total impact (global_ai_impact) - Gaming, Manufacturing and Retail has highest impact on avg.
+<img width="1874" height="232" alt="17" src="https://github.com/user-attachments/assets/3b51eef7-de09-4203-9a22-2e757cd84ebc" />
 
 
 *    Cross-dataset joins (correlations) Example: Link ai_job_market_insights with global_ai_impact (using country/industry keys) - AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+<img width="1874" height="264" alt="18" src="https://github.com/user-attachments/assets/1f1eca61-a266-437b-9d5d-784f12cfd200" />
 
 
 *    Top-N and profiling patterns. Top 5 domains by total impact (global_ai_impact) - Gaming, Media, Manufacturing, Automotive.
+<img width="1874" height="232" alt="19" src="https://github.com/user-attachments/assets/8d3109cf-f553-4099-8ee2-fa6d9ed0bff6" />
 
 
 *    Top-3 roles by salary within each adoption level (ai_job_market_insights) - Salary is high for Marketing Specialist, Data Scientist and UX Designer.
+<img width="1874" height="264" alt="20" src="https://github.com/user-attachments/assets/7fec1c59-a486-483a-aeaf-2d202128c6fa" />
 
 
