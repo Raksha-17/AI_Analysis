@@ -13,7 +13,8 @@ GROUP BY industry, ai_adoption_level
 ORDER BY industry, ai_adoption_level;
 /*AI Adoption level is high in Healthcare, Tech and Manufacturing*/
 
-/*ai_job_market_insights: Average salary by role and adoption level*/
+
+/* Average salary by role and adoption level (safe median)*/
 
 SELECT
   Job_Title AS role,
@@ -24,6 +25,7 @@ FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
 GROUP BY role, ai_adoption_level
 ORDER BY role, ai_adoption_level;
 /* When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer  */
+
 
 /* ai_job_market_insights: Regions with strongest growth projection
 Assuming: Region and Job_Growth_Projection (as a percentage or index).*/
