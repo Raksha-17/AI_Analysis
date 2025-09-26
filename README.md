@@ -61,12 +61,14 @@ SQL Query: [1.Data Exploration]()
 
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
-1. Normalize country/region names; fix typos. 
-2. Count nulls per key column:
-3. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
-4. Growth indicators per country/region if multiple years exist.
-5. Adoption bins (Low/Medium/High) based on AI_Adoption_Rate_PERCENT.
-6. Quick aggregations to establish baselines (mean salary by industry/adoption, total impact by country).
+1. Normalize country/region names; fix typos.
+   <img width="1874" height="232" alt="5" src="https://github.com/user-attachments/assets/a56b5bf8-39f5-4e6e-ae2e-381ef5c54ca5" />
+
+3. Count nulls per key column:
+4. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
+5. Growth indicators per country/region if multiple years exist.
+6. Adoption bins (Low/Medium/High) based on AI_Adoption_Rate_PERCENT.
+7. Quick aggregations to establish baselines (mean salary by industry/adoption, total impact by country).
 
 ## Analyze
 SQL Query: [Data Analysis]()  
