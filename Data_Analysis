@@ -1,14 +1,5 @@
----------Data Analysis----------------
+-------Data Analysis-------------------------
 ------Quick schema sanity checks (both tables)
-/*  Job market insights    */
-
-SELECT *
-FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`;
-
-/*   Global AI impact  */
-
-SELECT *
-FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`;
 
 -----Basic analytics patterns (by dataset)
 /*  ai_job_market_insights: Jobs by industry and AI adoption level */
@@ -149,17 +140,3 @@ FROM (
 WHERE rn <= 3
 ORDER BY ai_adoption_level, rn;
 /* Salary is high for Marketing Specialist, Data Scientist and UX Designer */
-
-/* Validation and safety checks */
------Basic counts to ensure you’re not duplicating joins:
-
-SELECT
-  (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`) AS jobs_rows,
-  (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`) AS impact_rows;
-
-------Spot-check sums by country for sanity:
-
-SELECT country, ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2) AS sum_impact
-FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
-GROUP BY country
-LIMIT 20;
