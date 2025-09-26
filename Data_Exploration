@@ -37,21 +37,6 @@ FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
 GROUP BY Industry, AI_Adoption_Level
 ORDER BY Industry, AI_Adoption_Level;
 
-/* Average salary by role and adoption level (safe median)*/
-
-SELECT  
-  Job_Title AS role,  
-  AI_Adoption_Level AS ai_adoption_level,
-  AVG(Salary_USD) AS avg_salary_usd,
-  APPROX_QUANTILES(Salary_USD, 100)[OFFSET(50)] AS approx_median_salary
-FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
-WHERE Salary_USD IS NOT NULL
-  AND Job_Title IS NOT NULL
-  AND AI_Adoption_Level IS NOT NULL
-GROUP BY Job_Title, AI_Adoption_Level
-ORDER BY role, ai_adoption_level;
-
-
 /* Validation and safety checks */
 /*Basic counts to ensure you’re not duplicating joins*/
 
@@ -59,7 +44,7 @@ SELECT
   (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`) AS jobs_rows,
   (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`) AS impact_rows;
 
-/* Spot-check sums by country for sanity*/
+/*Spot-check sums by country for sanity*/
 
 SELECT country, ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2) AS sum_impact
 FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
