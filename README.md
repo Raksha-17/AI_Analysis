@@ -41,18 +41,18 @@ Data Visualizations: [Tableau]()
 * Data quality metrics (missingness, duplication rate).
 
 ## Prepare
-### Data Sources:
+#### Data Sources:
 ai_job_market_insights.csv ()
 global_ai_impact.csv ()
 
-### Data Organization:
+#### Data Organization:
 * ai_job_market_insights: Industry, AI_Adoption_Level, Job_Title, Salary_USD, Location, Country, Region, Year, possibly other fields.
 * global_ai_impact: Country, Industry, Job_Loss_Due_to_AI_PERCENT, AI_Adoption_Rate_PERCENT, Year, etc.
   
 ## Process:
 * Check for missing values in key fields (Salary_USD, Country, Industry, Job_Title, Job_Loss_Due_to_AI_PERCENT).
 * Validate consistent naming (Industry, Location/Country synonyms).
-### Access & Compliance:
+#### Access & Compliance:
 If sharing externally, mask or aggregate sensitive fields; ensure row-level identifiers aren’t exposed.
 
 ### Data Exploration
