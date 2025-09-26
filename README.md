@@ -10,15 +10,15 @@ Derive actionable insights from two datasets — Global AI Impact and AI Job Mar
 * Key insights: identify top 5 industries by impact and top 5 regions by adoption-growth alignment.
 * Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI sheet.
 
-I will follow the steps of the data analysis process: Ask, [Prepare](), Process, [Analyze](), Share and Act.
+I will follow the steps of the data analysis process: Ask, Prepare, [Process](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration), [Analyze](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis), Share and Act.
 
 ### Quick links:
 Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
 
 ### SQL Queries:
 
-[Data Exploration]() 
-[Data Analysis]()  
+[Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration) 
+[Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
   
 Data Visualizations: [Tableau]()  
 
@@ -57,7 +57,7 @@ global_ai_impact.csv ()
 If sharing externally, mask or aggregate sensitive fields; ensure row-level identifiers aren’t exposed.
 
 ### Data Exploration
-SQL Query: [1.Data Exploration]() 
+SQL Query: [1.Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration) 
 
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
@@ -78,7 +78,7 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 <img width="1874" height="732" alt="4" src="https://github.com/user-attachments/assets/8a693c9e-799b-4731-b667-8e5f916a9a8b" />
 
 ## Analyze
-SQL Query: [Data Analysis]()  
+SQL Query: [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
 
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
 
