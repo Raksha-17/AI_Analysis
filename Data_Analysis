@@ -1,0 +1,164 @@
+------Quick schema sanity checks (both tables)
+/*  Job market insights    */
+
+SELECT *
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`;
+
+/*   Global AI impact  */
+
+SELECT *
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`;
+
+-----Basic analytics patterns (by dataset)
+/*  ai_job_market_insights: Jobs by industry and AI adoption level */
+
+SELECT
+  Industry AS industry,
+  AI_Adoption_Level AS ai_adoption_level,
+  COUNT(*) AS total_jobs
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+GROUP BY industry, ai_adoption_level
+ORDER BY industry, ai_adoption_level;
+/*AI Adoption level is high in Healthcare, Tech and Manufacturing*/
+
+/*ai_job_market_insights: Average salary by role and adoption level*/
+
+SELECT
+  Job_Title AS role,
+  AI_Adoption_Level AS ai_adoption_level,
+  ROUND(AVG(Salary_USD),2) AS avg_salary,
+  ROUND( APPROX_QUANTILES(Salary_USD, 100)[OFFSET(50)],2) AS approx_median_salary
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+GROUP BY role, ai_adoption_level
+ORDER BY role, ai_adoption_level;
+/* When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer  */
+
+/* ai_job_market_insights: Regions with strongest growth projection
+Assuming: Region and Job_Growth_Projection (as a percentage or index).*/
+
+SELECT
+  Location AS region,
+  ROUND (SAFE_DIVIDE(SUM(CASE WHEN Job_Growth_Projection = 'Growth' THEN 1 ELSE 0 END), COUNT(*))*100,2) AS growth_share
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+WHERE Job_Growth_Projection IS NOT NULL
+GROUP BY region
+ORDER BY growth_share DESC;
+/* Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto*/
+
+/*  global_ai_impact: Impact by country and Industry. */
+
+SELECT
+  Country AS country,
+  Industry AS domain,
+  ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2)AS total_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY country, domain
+ORDER BY total_impact DESC;
+/* Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing */
+
+/* global_ai_impact: Adoption vs. impact */
+
+SELECT
+  Industry AS industry,
+  AI_Adoption_Rate_PERCENT AS ai_adoption_rate,
+  AVG(Job_Loss_Due_to_AI_PERCENT) AS avg_impact,
+  APPROX_QUANTILES(Job_Loss_Due_to_AI_PERCENT, 100)[OFFSET(50)] AS approx_median_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY industry,ai_adoption_rate
+ORDER BY avg_impact DESC;
+/* AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing */
+ 
+
+/* Yearly total impact by country and domain (global_ai_impact) */
+
+SELECT
+  year,
+  country,
+  Industry,
+  SUM(Job_Loss_Due_to_AI_PERCENT) AS total_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY year, country, Industry
+ORDER BY year, country, Industry;
+/* In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024*/
+
+/* Yearly adoption/readiness vs. impact (global_ai_impact) */
+
+SELECT
+   Country AS country,
+  AI_Adoption_Rate_PERCENT,
+  year,
+  AVG(Job_Loss_Due_to_AI_PERCENT) AS avg_impact,
+  APPROX_QUANTILES(Job_Loss_Due_to_AI_PERCENT, 100)[OFFSET(50)] AS approx_median_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY country,AI_Adoption_Rate_PERCENT, year
+ORDER BY year, AI_Adoption_Rate_PERCENT;
+/* China, Japan, South Korea has highest avg_impact in 2021,2025,2024  */
+
+/* Yearly top domains by total impact (global_ai_impact) */
+
+SELECT
+  Industry,
+  year,
+  ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2) AS total_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY Industry, year
+ORDER BY year, total_impact DESC
+LIMIT 50;
+/* Gaming, Manufacturing and Retail has highest impact on avg */
+
+
+-------Cross-dataset joins (correlations)
+/* Example: Link ai_job_market_insights with global_ai_impact (using country/industry keys) */
+
+SELECT
+  j.Industry AS industry,
+  j.Country AS country,
+  j.Job_Title AS job_count,
+  j.AI_Adoption_Level AS ai_adoption_level,
+FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights` AS j
+LEFT JOIN `ai-analysis-472316.my_project_ai_analysis.global_ai_impact` AS g
+ON j.Location = g.Country AND j.Industry = g.Industry;
+/*  AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London  */
+
+-----Top-N and profiling patterns
+  
+/* Top-5 domains by total impact (global_ai_impact) */
+
+SELECT
+  Industry AS domain,
+  ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2) AS total_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY domain
+ORDER BY total_impact DESC
+LIMIT 5;
+/* Gaming, Media, Manufacturing, Automotive */
+
+
+/* Top-3 roles by salary within each adoption level (ai_job_market_insights)*/
+
+SELECT *
+FROM (
+  SELECT
+    Job_Title AS role,
+    AI_Adoption_Level AS ai_adoption_level,
+    ROUND( (Salary_USD),2) AS salary,
+    ROW_NUMBER() OVER (PARTITION BY AI_Adoption_Level ORDER BY Salary_USD DESC) AS rn
+  FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
+) AS t
+WHERE rn <= 3
+ORDER BY ai_adoption_level, rn;
+/* Salary is high for Marketing Specialist, Data Scientist and UX Designer */
+
+/* Validation and safety checks */
+-----Basic counts to ensure you’re not duplicating joins:
+
+SELECT
+  (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`) AS jobs_rows,
+  (SELECT COUNT(*) FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`) AS impact_rows;
+
+------Spot-check sums by country for sanity:
+
+SELECT country, ROUND(SUM(Job_Loss_Due_to_AI_PERCENT),2) AS sum_impact
+FROM `ai-analysis-472316.my_project_ai_analysis.global_ai_impact`
+GROUP BY country
+LIMIT 20;
