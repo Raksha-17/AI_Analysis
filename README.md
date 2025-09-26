@@ -98,47 +98,118 @@ The analysis question is:
 3. Salary dynamics by industry and adoption level to inform talent strategy and benchmarking.
 4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design. 
 
-* ai_job_market_insights: Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
+* ai_job_market_insights: Jobs by industry and AI adoption level.
   
 <img width="1874" height="232" alt="11" src="https://github.com/user-attachments/assets/93edaff0-e44e-44fe-8475-481caa592b39" />
 
-* Average salary by role and adoption level (safe median) - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+AI Adoption level is high in Healthcare, Tech and Manufacturing.
+
+* Average salary by role and adoption level (safe median).
   
 <img width="1874" height="232" alt="12" src="https://github.com/user-attachments/assets/96e6c50a-3a1f-4035-aae2-b5744e50f3a5" />
 
-* ai_job_market_insights: Regions with strongest growth projection, Assuming: Region and Job_Growth_Projection (as a percentage or index) - Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
+When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+
+* ai_job_market_insights: Regions with strongest growth projection, Assuming: Region and Job_Growth_Projection (as a percentage or index).
 
 <img width="1874" height="264" alt="13" src="https://github.com/user-attachments/assets/a2b39329-204b-444e-845d-152d46470552" />
 
-* global_ai_impact: Impact by country and Industry- Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing.
+Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
+
+* global_ai_impact: Impact by country and Industry.
 
 <img width="1874" height="232" alt="14" src="https://github.com/user-attachments/assets/b8ed150f-dee6-4e13-ad00-9ce333a9ef7e" />
 
-* global_ai_impact: Adoption vs. impact - AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
+Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing.
+
+* global_ai_impact: Adoption vs. impact.
 
 <img width="1874" height="232" alt="15" src="https://github.com/user-attachments/assets/345e4f31-fd9f-4416-ac9e-b24c41a06d1a" />
+
+AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
   
-* Yearly total impact by country and domain (global_ai_impact) - In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+* Yearly total impact by country and domain (global_ai_impact).
 
 <img width="1874" height="232" alt="16" src="https://github.com/user-attachments/assets/29704c24-359e-481e-b3db-0f68f142ce8c" />
 
-* Yearly adoption/readiness vs. impact (global_ai_impact) - China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+
+* Yearly adoption/readiness vs. impact (global_ai_impact). 
 
  <img width="1874" height="232" alt="17" src="https://github.com/user-attachments/assets/3b51eef7-de09-4203-9a22-2e757cd84ebc" />
 
-* Yearly top domains by total impact (global_ai_impact) - Gaming, Manufacturing and Retail has highest impact on avg.
+China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+
+* Yearly top domains by total impact (global_ai_impact).
 
 <img width="1874" height="264" alt="18" src="https://github.com/user-attachments/assets/1f1eca61-a266-437b-9d5d-784f12cfd200" />
 
-* Cross-dataset joins (correlations) Example: Link ai_job_market_insights with global_ai_impact (using country/industry keys) - AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+Gaming, Manufacturing and Retail has highest impact on avg.
+
+* Cross-dataset joins (correlations) Example: Link ai_job_market_insights with global_ai_impact (using country/industry keys).
 
 <img width="1874" height="232" alt="19" src="https://github.com/user-attachments/assets/8d3109cf-f553-4099-8ee2-fa6d9ed0bff6" />
 
-* Top-N and profiling patterns. Top 5 domains by total impact (global_ai_impact) - Gaming, Media, Manufacturing, Automotive.
+ AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+
+* Top-N and profiling patterns. Top 5 domains by total impact (global_ai_impact).
 
 <img width="1874" height="264" alt="20" src="https://github.com/user-attachments/assets/7fec1c59-a486-483a-aeaf-2d202128c6fa" />
 
-* Top-3 roles by salary within each adoption level (ai_job_market_insights) - Salary is high for Marketing Specialist, Data Scientist and UX Designer.
+Gaming, Media, Manufacturing, Automotive.
+
+* Top-3 roles by salary within each adoption level (ai_job_market_insights).
+  
 <img width="1874" height="232" alt="21" src="https://github.com/user-attachments/assets/7fd25448-384b-4b99-a762-d85c388e6721" />
 
+Salary is high for Marketing Specialist, Data Scientist and UX Designer.
 
+## Share
+
+Data Visualization: [Tableau]()  
+
+* About (72%) of Airbnb hosts only have one listing, other hosts could have multiple listings (up to as many as 400)
+
+* Some of the more rural/remote neighbourhoods have higher average prices, my guess is that the properties tend to be larger for these areas (room type/beds)
+
+* guests pay more $ for places downtown on average.
+
+* The top two are entire homes in Ward E and Ward F by far
+ - Also, it looks like no one really wants shared room, regardless of location
+ - Entire homes as a room type is the most in demand .
+
+* Ward E and Ward F are top 2 by number of superhosts and superhosts charge more.
+
+* Superhosts charge more but I suspect that the rankings of neighbourhoods has been affected by room type.
+
+* We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential.
+
+* Average price is even higher without instant book, according to Airbnb hosts get double the reservations because of the convenience factor.
+
+* hosts with instant book enabled seems to be more available, which means they get less reservations. Hosts are not charging premium for the convenience that comes with instant book.
+
+![Dashboard 1](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/6934ee78-2cde-4cb8-a0ae-9deb775d5458)
+
+ ## Act
+
+*  Airbnb should notify the super hosts about the price in Ward E to help them price their properties right for more revenue.
+
+*  Airbnb should notify hosts with instant book charging premium for the convenience for more reservations and more revenue.
+
+### Recommendations:
+
+The top revenue contributors to Airbnb in Jersey City are entire homes from Ward E, Ward F, Ward C, Ward D by far, to maximize revenue, it is essential that Airbnb makes the most out of the potential of these listings. Potential areas to be optimized and explored are:
+
+- The prices of entire homes in top four neighbourhoods should reflect the large demand;
+
+- Help superhosts price their properties in a way that reflects their status;
+
+-  Help instantbookable listings price properly taking into consideration the convenience they are providing;
+
+- Help highly rated listings price properly to reflect their high ratings and superior quality of services.
+
+Limitations and assumptions:
+
+- This analysis assumes that hosts that have not been reviewed since November 2022 are inactive;
+
+- Revenue potential is only measured by the potential revenue coming in the next 30 days, with the assumption that most visitors book their stays less than 30 days in advance.
