@@ -2,13 +2,13 @@
 Derive actionable insights from two datasets — Global AI Impact and AI Job Market Insights — to inform strategy on AI adoption, market dynamics, and talent planning across countries and industries.
 
 ## Introduction
-###Goal: Derive actionable insights on global AI impact and job market dynamics to inform strategy (e.g., policy, talent planning, or product focus).
-###Scope: Two datasets:
-###Global AI impact: country, industry, job_loss_due_to_AI_percent, year, etc.
-###AI job market insights: industry, AI_adoption_level, salary_usd, job_title, location, etc.
-###Data quality: <2% missingness on key fields per dataset.
-###Key insights: identify top 5 industries by impact and top 5 regions by adoption-growth alignment.
-###Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI sheet.
+### Goal: Derive actionable insights on global AI impact and job market dynamics to inform strategy (e.g., policy, talent planning, or product focus).
+### Scope: Two datasets:
+### Global AI impact: country, industry, job_loss_due_to_AI_percent, year, etc.
+### AI job market insights: industry, AI_adoption_level, salary_usd, job_title, location, etc.
+### Data quality: <2% missingness on key fields per dataset.
+### Key insights: identify top 5 industries by impact and top 5 regions by adoption-growth alignment.
+### Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI sheet.
 
 I will follow the steps of the data analysis process: Ask, Prepare, Process, [Analyze](), Share and Act.
 
