@@ -99,22 +99,29 @@ The analysis question is:
 4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design. 
 
 * ai_job_market_insights: Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
-  
+  <img width="1874" height="232" alt="11" src="https://github.com/user-attachments/assets/853e54e8-04b6-42bc-843a-0c55eb989595" />
 
+* Average salary by role and adoption level (safe median) - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+<img width="1874" height="232" alt="10" src="https://github.com/user-attachments/assets/fff63d5d-fcd6-4fdd-8495-53cf7c1f730a" />
 
 *  ai_job_market_insights: Regions with strongest growth projection, Assuming: Region and Job_Growth_Projection (as a percentage or index) - Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
-  
+  <img width="1874" height="232" alt="12" src="https://github.com/user-attachments/assets/8de54557-4d38-4e47-beaf-b0a3e70bd31c" />
+
 
 *  global_ai_impact: Impact by country and Industry- Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing.
+<img width="1874" height="264" alt="13" src="https://github.com/user-attachments/assets/0e870220-2f2f-4dc2-8cd3-e13ca072f188" />
 
   
 
 *  global_ai_impact: Adoption vs. impact - AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
+<img width="1874" height="232" alt="14" src="https://github.com/user-attachments/assets/ee581a42-935d-4c70-ba71-564e8b9fb18a" />
 
 *  Yearly total impact by country and domain (global_ai_impact) - In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+<img width="1874" height="232" alt="15" src="https://github.com/user-attachments/assets/e42f43d7-b247-490a-869c-cc935bff18ab" />
 
 
 *  Yearly adoption/readiness vs. impact (global_ai_impact) - China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+<img width="1874" height="232" alt="16" src="https://github.com/user-attachments/assets/2b1f939b-0bd0-4e66-b016-31ead61119bd" />
 
 
 *    Yearly top domains by total impact (global_ai_impact) - Gaming, Manufacturing and Retail has highest impact on avg.
