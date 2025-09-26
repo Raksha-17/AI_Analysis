@@ -81,6 +81,12 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 <img width="1874" height="732" alt="4" src="https://github.com/user-attachments/assets/8a693c9e-799b-4731-b667-8e5f916a9a8b" />
 
+6.Validation and safety checks - Basic counts to ensure you’re not duplicating joins.
+
+
+7.Spot-check sums by country for sanity.
+
+
 ## Analyze
 SQL Query: [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
 
@@ -92,4 +98,30 @@ The analysis question is:
 2. Industries with highest cumulative AI impact and corresponding workforce implications.
 3. Salary dynamics by industry and adoption level to inform talent strategy and benchmarking.
 4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design. 
+
+* ai_job_market_insights: Average salary by role and adoption level - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+
+*  ai_job_market_insights: Regions with strongest growth projection, Assuming: Region and Job_Growth_Projection (as a percentage or index) - Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
+
+*  global_ai_impact: Impact by country and Industry- Highest Impact in UK in Media, France in Gaming, Japan in Manufacturing.
+
+*  global_ai_impact: Adoption vs. impact - AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
+
+*  Yearly total impact by country and domain (global_ai_impact) - In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+
+
+*  Yearly adoption/readiness vs. impact (global_ai_impact) - China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+
+
+*    Yearly top domains by total impact (global_ai_impact) - Gaming, Manufacturing and Retail has highest impact on avg.
+
+
+*    Cross-dataset joins (correlations) Example: Link ai_job_market_insights with global_ai_impact (using country/industry keys) - AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+
+
+*    Top-N and profiling patterns. Top 5 domains by total impact (global_ai_impact) - Gaming, Media, Manufacturing, Automotive.
+
+
+*    Top-3 roles by salary within each adoption level (ai_job_market_insights) - Salary is high for Marketing Specialist, Data Scientist and UX Designer.
+
 
