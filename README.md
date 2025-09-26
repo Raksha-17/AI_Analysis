@@ -1,4 +1,4 @@
-# AI_Analysis
+# Impact_of_AI_on_Digital_Media_Analysis
 Derive actionable insights from two datasets — Global AI Impact and AI Job Market Insights — to inform strategy on AI adoption, market dynamics, and talent planning across countries and industries.
 
 ## Introduction
@@ -13,7 +13,7 @@ Reproducibility: end-to-end notebook or SQL workflow that outputs a single KPI s
 I will follow the steps of the data analysis process: Ask, Prepare, Process, [Analyze](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/blob/main/README.md#act), Share and Act.
 
 ### Quick links:
-Data Source: [Inside Ai_Analysis] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
+Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com/datasets/atharvasoundankar/impact-of-ai-on-digital-media-2020-2025)
 
 SQL Queries:  
 
@@ -26,16 +26,16 @@ Data Visualizations: [Tableau]()
 * Quantify cross-country and cross-industry AI impact and link it to adoption and salary dynamics.
 * Provide prioritized insights for decision-makers on where AI adoption is strongest and where potential impact is highest.
 
-## Inputs / Outputs:
-# Inputs:
+### Inputs / Outputs:
+#### Inputs:
 * ai_job_market_insights: Industry, AI_Adoption_Level, Job_Title, Salary_USD, Location, Country, Region, etc.
 * global_ai_impact: Country, Industry, Job_Loss_Due_to_AI_PERCENT, AI_Adoption_Rate_PERCENT, Year, etc.
 
 ### Analysis
-# Outputs:
+#### Outputs:
 * KPI sheets per dataset (e.g., average salary by role/adoption, total impact by country/industry, adoption vs. impact maps).
 * Cross-dataset correlations (e.g., adoption_rate vs. average_impact).
-# Evaluation Metrics:
+#### Evaluation Metrics:
 * Correlation strength (Pearson/Spearman) between adoption and impact.
 * Stability of top domains across years.
 * Data quality metrics (missingness, duplication rate).
@@ -45,14 +45,14 @@ Data Visualizations: [Tableau]()
 ai_job_market_insights.csv ()
 global_ai_impact.csv ()
 
-# Data Organization:
+### Data Organization:
 * ai_job_market_insights: Industry, AI_Adoption_Level, Job_Title, Salary_USD, Location, Country, Region, Year, possibly other fields.
 * global_ai_impact: Country, Industry, Job_Loss_Due_to_AI_PERCENT, AI_Adoption_Rate_PERCENT, Year, etc.
   
 ## Process:
 * Check for missing values in key fields (Salary_USD, Country, Industry, Job_Title, Job_Loss_Due_to_AI_PERCENT).
 * Validate consistent naming (Industry, Location/Country synonyms).
-# Access & Compliance:
+### Access & Compliance:
 If sharing externally, mask or aggregate sensitive fields; ensure row-level identifiers aren’t exposed.
 
 ### Data Exploration
