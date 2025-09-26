@@ -63,12 +63,19 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 1. Normalize country/region names; fix typos.
    <img width="1874" height="232" alt="5" src="https://github.com/user-attachments/assets/a56b5bf8-39f5-4e6e-ae2e-381ef5c54ca5" />
+   <img width="1874" height="232" alt="6" src="https://github.com/user-attachments/assets/22b197ce-e056-4842-8ba4-65e81194b84c" />
 
-3. Count nulls per key column:
-4. Handle missing Salary_USD or Job_Loss_Due_to_AI_PERCENT with imputation or flagging.
-5. Growth indicators per country/region if multiple years exist.
-6. Adoption bins (Low/Medium/High) based on AI_Adoption_Rate_PERCENT.
-7. Quick aggregations to establish baselines (mean salary by industry/adoption, total impact by country).
+2. Count nulls per key column:
+ <img width="1906" height="732" alt="1" src="https://github.com/user-attachments/assets/399758e0-7473-413d-99f6-d6da311911c4" />
+
+3. Check distinct counts to validate the number of unique hosts/listings.
+<img width="1906" height="764" alt="2" src="https://github.com/user-attachments/assets/5a24f9c4-b9aa-4588-a16f-f715ca2bc52d" />
+
+4. Make queries explicit and robust - Jobs by industry and AI adoption level (explicit columns).
+<img width="1874" height="732" alt="3" src="https://github.com/user-attachments/assets/d0974b3f-64ff-4687-984c-7af96f50b210" />
+
+5. Average salary by role and adoption level (safe median).
+<img width="1874" height="732" alt="4" src="https://github.com/user-attachments/assets/8a693c9e-799b-4731-b667-8e5f916a9a8b" />
 
 ## Analyze
 SQL Query: [Data Analysis]()  
@@ -80,7 +87,5 @@ The analysis question is:
 1. Regions with strongest adoption signals and growth potential.
 2. Industries with highest cumulative AI impact and corresponding workforce implications.
 3. Salary dynamics by industry and adoption level to inform talent strategy and benchmarking.
-4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design.
-
-The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
+4. Relationships between AI adoption rate and job loss to guide policy, reskilling, and program design. 
 
