@@ -82,9 +82,11 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 <img width="1874" height="732" alt="4" src="https://github.com/user-attachments/assets/8a693c9e-799b-4731-b667-8e5f916a9a8b" />
 
 6.Validation and safety checks - Basic counts to ensure you’re not duplicating joins.
+<img width="1906" height="264" alt="7" src="https://github.com/user-attachments/assets/56c8e688-50c9-4272-9584-b501c609feb7" />
 
 
 7.Spot-check sums by country for sanity.
+<img width="1874" height="264" alt="8" src="https://github.com/user-attachments/assets/ba6eb68d-f49c-481d-b59a-6be30fedee9d" />
 
 
 ## Analyze
