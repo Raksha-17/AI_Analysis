@@ -168,33 +168,48 @@ Salary is high for Marketing Specialist, Data Scientist and UX Designer.
 
 Data Visualization: [Tableau]()  
 
-* About (72%) of Airbnb hosts only have one listing, other hosts could have multiple listings (up to as many as 400)
+* Regions with strongest adoption signals are Berlin, Tokyo, New York, Toronto, Dubai, London. (as observed)
+* Regions with high adoption but lower immediate impact - Potential resilience in job mix or effective upskilling; study transferable skills and cross-industry mobility.
 
-* Some of the more rural/remote neighbourhoods have higher average prices, my guess is that the properties tend to be larger for these areas (room type/beds)
+Regional growth potential indicators (dashboard prompts)
 
-* guests pay more $ for places downtown on average.
+Year-over-year growth in AI_Adoption_Rate_PERCENT
+Projected openings or job_growth_projection (index)
+Average salary growth for AI-forward roles
 
-* The top two are entire homes in Ward E and Ward F by far
- - Also, it looks like no one really wants shared room, regardless of location
- - Entire homes as a room type is the most in demand .
+* Top cumulative impact domains (by Job_Loss_Due_to_AI_PERCENT across years) are Gaming, Media, Manufacturing, Retail, Automotive (as observed)
 
-* Ward E and Ward F are top 2 by number of superhosts and superhosts charge more.
+High adoption + high impact → displacement risk; requires reskilling, role redesign, safety nets.
+Moderate adoption + high impact → focus on rapid upskilling and internal mobility.
+Low adoption + moderate impact → monitor for tipping points; proactive capability-building.
+Cross-industry patterns to watch
 
-* Superhosts charge more but I suspect that the rankings of neighbourhoods has been affected by room type.
+Rising demand for data-centric and security roles (Data Scientist, Cybersecurity Analyst) in mature markets.
+Emerging premium roles in marketing, UX, and product management as AI augments product teams.
+3) Salary dynamics by industry and adoption level
+Key observation patterns
 
-* We can see that in some neighbourhoods superhosts aren't even charging as much as the regular ones (especially in the Ward E where properties are in demand and superhosts have high revenue potential.
+When adoption is high, salaries rise for AI-forward roles (e.g., Data Scientist, Cybersecurity Analyst, AI Researchers in select markets).
+When adoption is lower, some roles (AI Researchers, HR/Operations Managers, Sales Managers, Product Managers, Software Engineers) show relatively higher average salaries (likely scarcity in those markets or premium seniority).
+Implications for talent strategy
 
-* Average price is even higher without instant book, according to Airbnb hosts get double the reservations because of the convenience factor.
+Map compensation bands by industry and adoption tier; adjust for regional cost of living.
+Prioritize global sourcing for high-demand roles in markets with rising adoption but limited local supply.
+Invest in upskilling programs to move workers from lower-adoption to higher-value AI-enabled roles.
 
-* hosts with instant book enabled seems to be more available, which means they get less reservations. Hosts are not charging premium for the convenience that comes with instant book.
-
-![Dashboard 1](https://github.com/Raksha-17/Airbnb-JerseyCity-Case-Study/assets/146487383/6934ee78-2cde-4cb8-a0ae-9deb775d5458)
+Proactive reskilling programs in high-adoption regions/industries with rising loss.
+Cross-training to create new-role pipelines (e.g., AI ops, AI governance, data ethics).
+Pairing public funding with private incentives for displaced workers.
+Alternative measures to enrich insight
 
  ## Act
 
-*  Airbnb should notify the super hosts about the price in Ward E to help them price their properties right for more revenue.
+Regions with strongest adoption signals and growth potential - Action: Prioritize regional talent initiatives, partnerships, and incubators in these hubs.
 
-*  Airbnb should notify hosts with instant book charging premium for the convenience for more reservations and more revenue.
+Regional growth potential indicators - Action: Target investment in regions with rising adoption AND rising demand signals.
+
+Industries with highest cumulative AI impact and workforce implications Action: Prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
+Workforce implications by industry
 
 ### Recommendations:
 
