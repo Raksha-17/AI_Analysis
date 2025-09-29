@@ -169,7 +169,7 @@ Salary is high for Marketing Specialist, Data Scientist and UX Designer.
 Data Visualization: [Tableau]()  
 
 * Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
-* Average salary by role and adoption level - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+* Average salary by role and adoption level - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist, Marketing Specialist and UX Designer.
 * Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
 * Highest Impact globally in UK in Media, France in Gaming, Japan in Manufacturing.
 * AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
@@ -184,9 +184,9 @@ Data Visualization: [Tableau]()
 
  ## Act
  
- * Prioritize regional talent initiatives, partnerships, and incubators in these hubs. Regions with strongest adoption signals and growth potential.
- * Target investment in regions with rising adoption Regional growth potential indicators and rising demand signals.
- * Industries with highest cumulative AI impact and workforce implications Action: Prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
+ * Prioritize regional talent initiatives, partnerships, and incubators in these hubs with regions with strongest adoption signals and growth potential.
+ * Target investment in regions with rising adoption growth indicators and rising demand signals.
+ * Industries with highest cumulative AI impact and workforce implications so prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
 
 ### Recommendations:
 
