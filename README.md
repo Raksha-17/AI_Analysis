@@ -193,18 +193,14 @@ Workforce implications by industry
 
 ### Recommendations:
 
-The top revenue contributors to Airbnb in Jersey City are entire homes from Ward E, Ward F, Ward C, Ward D by far, to maximize revenue, it is essential that Airbnb makes the most out of the potential of these listings. Potential areas to be optimized and explored are:
-
-- The prices of entire homes in top four neighbourhoods should reflect the large demand;
-
-- Help superhosts price their properties in a way that reflects their status;
-
--  Help instantbookable listings price properly taking into consideration the convenience they are providing;
-
-- Help highly rated listings price properly to reflect their high ratings and superior quality of services.
+* Prioritize upskilling in Data Science, Cybersecurity, UX Design, and Marketing in high-adoption and high-growth regions (e.g., Tokyo, New York, Berlin, Toronto) to align with demand.
+* In markets with high senior salaries but lower adoption, launch AI literacy and cross-functional training for AI-enabled product and operations roles to prepare for future demand.
+* Develop a regional talent playbook for Tokyo, New York, Berlin, and Toronto with domain focus on Gaming, Media, and Manufacturing.
+Implement mobility and secondment programs to accelerate cross-region knowledge transfer and reduce skill gaps.
+* In regions with rising adoption but potential displacement (supported by salary and impact data), design targeted reskilling pilots with clear metrics: training hours, job placement, time-to-fill for AI-forward roles.
+* Emphasize responsible AI, model governance, and ethics training as adoption accelerates in more regulated or sensitive sectors.
 
 Limitations and assumptions:
 
-- This analysis assumes that hosts that have not been reviewed since November 2022 are inactive;
-
-- Revenue potential is only measured by the potential revenue coming in the next 30 days, with the assumption that most visitors book their stays less than 30 days in advance.
+* This analysis assumes that hosts that have not been reviewed since November 2022 are inactive;
+* Revenue potential is only measured by the potential revenue coming in the next 30 days, with the assumption that most visitors book their stays less than 30 days in advance.
