@@ -68,7 +68,7 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 2. Count nulls per key column:
 
-<img width="1906" height="232" alt="1" src="https://github.com/user-attachments/assets/82af0bed-ba4b-4269-acca-bb4bbc3c2d93" />
+   <img width="1906" height="232" alt="1" src="https://github.com/user-attachments/assets/82af0bed-ba4b-4269-acca-bb4bbc3c2d93" />
  
 3. Check distinct counts to validate the number of unique hosts/listings.
    
@@ -76,15 +76,15 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 4. Make queries explicit and robust - Jobs by industry and AI adoption level (explicit columns).
 
-<img width="1874" height="732" alt="3" src="https://github.com/user-attachments/assets/d0974b3f-64ff-4687-984c-7af96f50b210" />
+   <img width="1874" height="732" alt="3" src="https://github.com/user-attachments/assets/d0974b3f-64ff-4687-984c-7af96f50b210" />
 
 5.Validation and safety checks - Basic counts to ensure you’re not duplicating joins.
 
-<img width="1906" height="264" alt="7" src="https://github.com/user-attachments/assets/56c8e688-50c9-4272-9584-b501c609feb7" />
+   <img width="1906" height="264" alt="7" src="https://github.com/user-attachments/assets/56c8e688-50c9-4272-9584-b501c609feb7" />    
 
 6.Spot-check sums by country for sanity.
 
-<img width="1874" height="264" alt="8" src="https://github.com/user-attachments/assets/ba6eb68d-f49c-481d-b59a-6be30fedee9d" />
+  <img width="1874" height="264" alt="8" src="https://github.com/user-attachments/assets/ba6eb68d-f49c-481d-b59a-6be30fedee9d" />
 
 
 ## Analyze
