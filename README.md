@@ -183,13 +183,10 @@ Data Visualization: [Tableau]()
 * When adoption is lower, some roles (AI Researchers, HR/Operations Managers, Sales Managers, Product Managers, Software Engineers) show relatively higher average salaries (likely scarcity in those markets or premium seniority).
 
  ## Act
-
-Regions with strongest adoption signals and growth potential - Action: Prioritize regional talent initiatives, partnerships, and incubators in these hubs.
-
-Regional growth potential indicators - Action: Target investment in regions with rising adoption AND rising demand signals.
-
-Industries with highest cumulative AI impact and workforce implications Action: Prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
-Workforce implications by industry
+ 
+ * Prioritize regional talent initiatives, partnerships, and incubators in these hubs. Regions with strongest adoption signals and growth potential.
+ * Target investment in regions with rising adoption Regional growth potential indicators and rising demand signals.
+ * Industries with highest cumulative AI impact and workforce implications Action: Prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
 
 ### Recommendations:
 
@@ -200,7 +197,8 @@ Implement mobility and secondment programs to accelerate cross-region knowledge 
 * In regions with rising adoption but potential displacement (supported by salary and impact data), design targeted reskilling pilots with clear metrics: training hours, job placement, time-to-fill for AI-forward roles.
 * Emphasize responsible AI, model governance, and ethics training as adoption accelerates in more regulated or sensitive sectors.
 
-Limitations and assumptions:
+### Limitations and assumptions:
 
-* This analysis assumes that hosts that have not been reviewed since November 2022 are inactive;
-* Revenue potential is only measured by the potential revenue coming in the next 30 days, with the assumption that most visitors book their stays less than 30 days in advance.
+* Patterns observed in Gaming, Media, Manufacturing, or specific regions may not replicate in others due to regulatory, cultural, or labor market differences.
+* Reskilling and displacement projections are scenario-based. They should be supplemented with local labor market analyses, stakeholder input, and pilot results.
+* Increased adoption raises governance and ethical considerations (privacy, bias, accountability). These factors may moderate the positive impacts of adoption.
