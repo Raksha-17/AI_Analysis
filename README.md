@@ -168,39 +168,19 @@ Salary is high for Marketing Specialist, Data Scientist and UX Designer.
 
 Data Visualization: [Tableau]()  
 
-* Regions with strongest adoption signals are Berlin, Tokyo, New York, Toronto, Dubai, London. (as observed)
-* Regions with high adoption but lower immediate impact - Potential resilience in job mix or effective upskilling; study transferable skills and cross-industry mobility.
-
-Regional growth potential indicators (dashboard prompts)
-
-Year-over-year growth in AI_Adoption_Rate_PERCENT
-Projected openings or job_growth_projection (index)
-Average salary growth for AI-forward roles
-
-* Top cumulative impact domains (by Job_Loss_Due_to_AI_PERCENT across years) are Gaming, Media, Manufacturing, Retail, Automotive (as observed)
-
-High adoption + high impact → displacement risk; requires reskilling, role redesign, safety nets.
-Moderate adoption + high impact → focus on rapid upskilling and internal mobility.
-Low adoption + moderate impact → monitor for tipping points; proactive capability-building.
-Cross-industry patterns to watch
-
-Rising demand for data-centric and security roles (Data Scientist, Cybersecurity Analyst) in mature markets.
-Emerging premium roles in marketing, UX, and product management as AI augments product teams.
-3) Salary dynamics by industry and adoption level
-Key observation patterns
-
-When adoption is high, salaries rise for AI-forward roles (e.g., Data Scientist, Cybersecurity Analyst, AI Researchers in select markets).
-When adoption is lower, some roles (AI Researchers, HR/Operations Managers, Sales Managers, Product Managers, Software Engineers) show relatively higher average salaries (likely scarcity in those markets or premium seniority).
-Implications for talent strategy
-
-Map compensation bands by industry and adoption tier; adjust for regional cost of living.
-Prioritize global sourcing for high-demand roles in markets with rising adoption but limited local supply.
-Invest in upskilling programs to move workers from lower-adoption to higher-value AI-enabled roles.
-
-Proactive reskilling programs in high-adoption regions/industries with rising loss.
-Cross-training to create new-role pipelines (e.g., AI ops, AI governance, data ethics).
-Pairing public funding with private incentives for displaced workers.
-Alternative measures to enrich insight
+* Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
+* Average salary by role and adoption level - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist,Marketing Specialist and UX Designer.
+* Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
+* Highest Impact globally in UK in Media, France in Gaming, Japan in Manufacturing.
+* AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
+* In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+* China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+* Gaming, Manufacturing and Retail has highest impact on avg.
+* AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+* Top-5 domains by total impact Gaming, Media, Manufacturing, Automotive Top-5 domains by total impact.
+* Top-3 roles by salary within each adoption level Salary is high for Marketing Specialist, Data Scientist and UX Designer.
+* When adoption is high, salaries rise for AI-forward roles (e.g., Data Scientist, Cybersecurity Analyst, AI Researchers in select markets).
+* When adoption is lower, some roles (AI Researchers, HR/Operations Managers, Sales Managers, Product Managers, Software Engineers) show relatively higher average salaries (likely scarcity in those markets or premium seniority).
 
  ## Act
 
