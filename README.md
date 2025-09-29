@@ -1,4 +1,4 @@
-# Impact_of AI on Digital Media Analysis
+# Impact of AI on Digital Media Analysis
 Derive actionable insights from two datasets — Global AI Impact and AI Job Market Insights — to inform strategy on AI adoption, market dynamics, and talent planning across countries and industries.
 
 ## Introduction
@@ -193,7 +193,7 @@ Data Visualization: [Tableau]()
 * Prioritize upskilling in Data Science, Cybersecurity, UX Design, and Marketing in high-adoption and high-growth regions (e.g., Tokyo, New York, Berlin, Toronto) to align with demand.
 * In markets with high senior salaries but lower adoption, launch AI literacy and cross-functional training for AI-enabled product and operations roles to prepare for future demand.
 * Develop a regional talent playbook for Tokyo, New York, Berlin, and Toronto with domain focus on Gaming, Media, and Manufacturing.
-Implement mobility and secondment programs to accelerate cross-region knowledge transfer and reduce skill gaps.
+* Implement mobility and secondment programs to accelerate cross-region knowledge transfer and reduce skill gaps.
 * In regions with rising adoption but potential displacement (supported by salary and impact data), design targeted reskilling pilots with clear metrics: training hours, job placement, time-to-fill for AI-forward roles.
 * Emphasize responsible AI, model governance, and ethics training as adoption accelerates in more regulated or sensitive sectors.
 
