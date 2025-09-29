@@ -20,7 +20,7 @@ Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com
 * [Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration) 
 * [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
   
-Data Visualizations: [Tableau]()  
+Data Visualizations: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/AIImpactAnalysis_17585852683960/Dashboard1#2)  
 
 ## Ask
 ### Business Task
@@ -166,39 +166,59 @@ Salary is high for Marketing Specialist, Data Scientist and UX Designer.
 
 ## Share
 
-Data Visualization: [Tableau]()  
+Data Visualization: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/AIImpactAnalysis_17585852683960/Dashboard1#2)  
 
 * Jobs by industry and AI adoption level - AI Adoption level is high in Healthcare, Tech and Manufacturing.
 * Average salary by role and adoption level - When Adoption rate is lower, avg_salary is high for AI researcher, HR manager, Operations Manager, Sales Manager, Product Manager and Software Engineer; When Adoption rate is higher, avg_salary is high for Cybersecurity Analyst, Data Scientist, Marketing Specialist and UX Designer.
 * Region with Strongest Growth Projection is Tokyo, New York, Berlin and Toronto.
 * Highest Impact globally in UK in Media, France in Gaming, Japan in Manufacturing.
+  
 * AI Adoption rate and its Impact is high in Gaming, Retail , Manufacturing.
+  
 * In 2020 Germany Manufacturing Industry had the highest impact followed by China in Legal in 2025 and India in Media in 2024.
+  
 * China, Japan, South Korea has highest avg_impact in 2021,2025,2024.
+  
 * Gaming, Manufacturing and Retail has highest impact on avg.
+  
 * AI Adoption level is high in Manufacturing in Berlin, Healthcare in Dubai, Retail in London.
+  
 * Top-5 domains by total impact Gaming, Media, Manufacturing, Automotive Top-5 domains by total impact.
+  
 * Top-3 roles by salary within each adoption level Salary is high for Marketing Specialist, Data Scientist and UX Designer.
+  
 * When adoption is high, salaries rise for AI-forward roles (e.g., Data Scientist, Cybersecurity Analyst, AI Researchers in select markets).
+  
 * When adoption is lower, some roles (AI Researchers, HR/Operations Managers, Sales Managers, Product Managers, Software Engineers) show relatively higher average salaries (likely scarcity in those markets or premium seniority).
+  <img width="999" height="799" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/ebfcd0f4-ba07-4f82-a819-1f4fbae04dc7" />
+
 
  ## Act
  
  * Prioritize regional talent initiatives, partnerships, and incubators in these hubs with regions with strongest adoption signals and growth potential.
+   
  * Target investment in regions with rising adoption growth indicators and rising demand signals.
+   
  * Industries with highest cumulative AI impact and workforce implications so prioritize retraining and new-role creation in these domains; design industry-specific transition programs.
 
 ### Recommendations:
 
 * Prioritize upskilling in Data Science, Cybersecurity, UX Design, and Marketing in high-adoption and high-growth regions (e.g., Tokyo, New York, Berlin, Toronto) to align with demand.
+  
 * In markets with high senior salaries but lower adoption, launch AI literacy and cross-functional training for AI-enabled product and operations roles to prepare for future demand.
+  
 * Develop a regional talent playbook for Tokyo, New York, Berlin, and Toronto with domain focus on Gaming, Media, and Manufacturing.
+  
 * Implement mobility and secondment programs to accelerate cross-region knowledge transfer and reduce skill gaps.
+  
 * In regions with rising adoption but potential displacement (supported by salary and impact data), design targeted reskilling pilots with clear metrics: training hours, job placement, time-to-fill for AI-forward roles.
+  
 * Emphasize responsible AI, model governance, and ethics training as adoption accelerates in more regulated or sensitive sectors.
 
 ### Limitations and assumptions:
 
 * Patterns observed in Gaming, Media, Manufacturing, or specific regions may not replicate in others due to regulatory, cultural, or labor market differences.
+  
 * Reskilling and displacement projections are scenario-based. They should be supplemented with local labor market analyses, stakeholder input, and pilot results.
+  
 * Increased adoption raises governance and ethical considerations (privacy, bias, accountability). These factors may moderate the positive impacts of adoption.
