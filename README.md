@@ -68,9 +68,11 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 2. Count nulls per key column:
  <img width="1906" height="732" alt="1" src="https://github.com/user-attachments/assets/399758e0-7473-413d-99f6-d6da311911c4" />
+ 
 3. Check distinct counts to validate the number of unique hosts/listings.
    
 <img width="1906" height="764" alt="2" src="https://github.com/user-attachments/assets/5a24f9c4-b9aa-4588-a16f-f715ca2bc52d" />
+
 4. Make queries explicit and robust - Jobs by industry and AI adoption level (explicit columns).
 
 <img width="1874" height="732" alt="3" src="https://github.com/user-attachments/assets/d0974b3f-64ff-4687-984c-7af96f50b210" />
