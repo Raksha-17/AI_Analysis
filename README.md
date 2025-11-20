@@ -17,8 +17,8 @@ Data Source: [Impact of AI on Digital Media (2020-2025)] (https://www.kaggle.com
 
 ### SQL Queries:
 
-* [Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration) 
-* [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
+* [Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration.sql) 
+* [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis.sql)  
   
 Data Visualizations: [Tableau](https://public.tableau.com/app/profile/raksha.kandasamy.chandramohan/viz/AIImpactAnalysis_17585852683960/Dashboard1#2)  
 
@@ -57,7 +57,7 @@ Data Visualizations: [Tableau](https://public.tableau.com/app/profile/raksha.kan
 If sharing externally, mask or aggregate sensitive fields; ensure row-level identifiers aren’t exposed.
 
 ### Data Exploration
-SQL Query: [1.Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration) 
+SQL Query: [1.Data Exploration](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Exploration.sql) 
 
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
@@ -88,7 +88,7 @@ Before cleaning the data, I am familiarizing myself with the data to find the in
 
 
 ## Analyze
-SQL Query: [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis)  
+SQL Query: [Data Analysis](https://github.com/Raksha-17/AI_Analysis/blob/main/Data_Analysis.sql)  
 
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau. 
 
