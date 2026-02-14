@@ -32,7 +32,7 @@ Assuming: Region and Job_Growth_Projection (as a percentage or index).*/
 
 SELECT
   Location AS region,
-  ROUND (SAFE_DIVIDE(SUM(CASE WHEN Job_Growth_Projection = 'Growth' THEN 1 ELSE 0 END), COUNT(*))*100,2) AS growth_share
+  ROUND(CASE WHEN COUNT(*) = 0 THEN 0 ELSE (SUM(CASE WHEN Job_Growth_Projection = 'Growth' THEN 1 ELSE 0 END) * 100.0) / COUNT(*) END,2) AS growth_share
 FROM `ai-analysis-472316.my_project_ai_analysis.ai_job_market_insights`
 WHERE Job_Growth_Projection IS NOT NULL
 GROUP BY region
